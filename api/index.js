@@ -3,7 +3,6 @@ const router = express.Router();
 
 router.post("/get-auth-code", (req, res, next) => {
   const email_address = req.body.email;
-
   try {
     res.send({email_address})
   } catch (error) {
